@@ -27,7 +27,7 @@ import sys
 from pathlib import Path
 
 FIRSTLIGHT_ROOT = Path(__file__).resolve().parents[2] / "firstlight"
-WORKSPACE_ROOT = Path(__file__).resolve().parents[2]  # D:\Programs\crai
+WORKSPACE_ROOT = Path(__file__).resolve().parents[2]  # workspace root (holds firstlight/ and pipeline/)
 for _root in (str(WORKSPACE_ROOT), str(FIRSTLIGHT_ROOT)):
     if _root not in sys.path:
         sys.path.insert(0, _root)

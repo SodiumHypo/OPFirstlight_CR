@@ -12,7 +12,9 @@ import os
 
 TROOPS = set()  # filled lazily from adapter if needed; card ids suffice here
 
-for path in sorted(glob.glob(r"D:\Programs\crai\pipeline\artifacts\reports\live_*.jsonl"))[-6:]:
+REPORTS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "artifacts", "reports")
+
+for path in sorted(glob.glob(os.path.join(REPORTS_DIR, "live_*.jsonl")))[-6:]:
     recs = [json.loads(l) for l in open(path, encoding="utf-8")]
     if not recs:
         continue
