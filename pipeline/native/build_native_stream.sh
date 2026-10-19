@@ -3,7 +3,7 @@
 # emulator (Android/Linux kernel, invoked via `su 0`). This is a cross-
 # compilation from Windows: MSVC cannot target Linux ELF, so the build goes
 # through WSL gcc (already installed; no extra toolchain introduced).
-# Usage: bash "D:/Programs/crai/pipeline/native/build_native_stream.sh"
+# Usage: bash pipeline/native/build_native_stream.sh  (from the workspace root)
 set -euo pipefail
 
 NATIVE_DIR="$(cd "$(dirname "$0")" && pwd)"
