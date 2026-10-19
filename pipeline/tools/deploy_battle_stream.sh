@@ -2,11 +2,11 @@
 # Push cr_battle_stream to a MuMu instance and run a standby sanity test.
 # Standby expectation (no battle running): battle_active:false frames, no crash.
 # Usage:
-#   bash deploy_battle_stream.sh              # actual_game (default 127.0.0.1:16416)
+#   bash deploy_battle_stream.sh              # actual_game (default ${CR_ADB_SERIAL:-127.0.0.1:5555})
 #   bash deploy_battle_stream.sh 127.0.0.1:16384
 set -euo pipefail
 
-SERIAL="${1:-127.0.0.1:16416}"
+SERIAL="${1:-${CR_ADB_SERIAL:-127.0.0.1:5555}}"
 ADB="${ADB:-D:/Software/MuMu Player 12/shell/adb.exe}"
 LOCAL_BIN="$(cd "$(dirname "$0")/../native/build" && pwd)/cr_battle_stream"
 command -v cygpath >/dev/null 2>&1 && LOCAL_BIN="$(cygpath -m "$LOCAL_BIN")"
