@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+/runs/
+/training_replays/
+/wandb/
+/evaluations/
+/.runtime/
+/.audit/
+/builds/
+/build/
+/user-provided/
+
+# Local deployment configuration; publish only the blank template.
+.env
+.env.*
+!.env.example
+
+# Generated native binaries
+/native_runner/probe/out/
+*.apk
+*.so
+
+# Model and dataset outputs
+*.pt
+*.safetensors
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.parquet
+
+# Local signing keys
+*.keystore
+*.jks
+*.keystore.pass
+
+# Generated machine-specific reports and evidence
+/artifacts/
+/native_runner/artifacts/
+
+# OS/editor
+Thumbs.db
+.DS_Store
+.idea/
+
+# No pretrained checkpoints are published from this repository.
+/checkpoints/**/*.pt
+/checkpoints/**/*.tmp
