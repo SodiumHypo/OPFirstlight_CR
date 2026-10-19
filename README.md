@@ -31,6 +31,7 @@
 ## Notice
 
 - This repository is a republished edition of the **FirstLight CR** project (original code licensed under [Apache 2.0](LICENSE)); full credit for the original design and implementation belongs to the original authors.
+- **This edition adds [pipeline/](pipeline/README.md)** — an online real-time streaming pipeline (state capture → adaptation → policy inference → in-game execution) built on top of the engine.
 - **No pretrained checkpoints are included**; see [checkpoints/README.md](checkpoints/README.md) for how to train or register your own.
 - **For learning and research purposes only.** Do not use it against any official or commercial online service. Clash Royale is a trademark of Supercell; this project is an offline private-server research environment and is not affiliated with or endorsed by Supercell.
 

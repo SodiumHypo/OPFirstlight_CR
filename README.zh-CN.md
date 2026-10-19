@@ -30,6 +30,7 @@
 ## 声明
 
 - 本仓库是 **FirstLight CR** 项目的再发布版本（原始代码采用 [Apache 2.0](LICENSE) 许可证），原项目的设计与实现版权归原作者所有。
+- **本版本新增 [pipeline/](pipeline/README.md)**：基于引擎构建的在线实时管线（状态采集 → 状态适配 → 策略推理 → 实机执行）。
 - **本仓库不附带任何预训练模型**，获取或注册模型见[模型说明](checkpoints/README.md)。
 - **仅供学习与研究使用**，请勿用于任何官方或商业在线服务。Clash Royale 是 Supercell 的商标；本项目为离线私服研究环境，与 Supercell 无关，也未获得其认可。
 
